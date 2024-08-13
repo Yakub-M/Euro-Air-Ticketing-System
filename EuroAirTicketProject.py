@@ -227,11 +227,11 @@ class UserInterface:
             self.ticket_information["airplane_id"] = (f"{hex(random.randrange(0, 2 ** 5))[2:]}" +
                                                       f"{random.randrange(100, 1000)}")
             self.ticket_information["ticket_class"] = self.ticket_class_var.get()
-            self.ticket_information["ticket_price"] = str(calculate_ticket_price()) + " lev"
+            self.ticket_information["ticket_price"] = str(calculate_ticket_price()) + " BGN"
             self.ticket_information["ticket_way"] = "one_way" if self.radio_button_var.get() == 0 else "round_trip"
             self.ticket_information["customer_first_name"] = self.entered_customer_first_name.get()
             self.ticket_information["customer_last_name"] = self.entered_customer_last_name.get()
-            self.ticket_information["travel_distance"] = str(int(calculate_travel_distance())) + " km"
+            self.ticket_information["travel_distance"] = str(int(calculate_travel_distance())) + " KM"
             self.ticket_information["travel_time"] = calculate_travel_time()
             self.ticket_information["departure_date"] = str(self.departure_date_calendar.selection_get())
 
@@ -272,7 +272,7 @@ class UserInterface:
 
         def calculate_ticket_price():
             # Arbitrary
-            # 4km = 1lev
+            # 4 KM = 1 BGN
             # Economy class = 1x
             # Premium economy class = 2x
             # Business class = 5x
