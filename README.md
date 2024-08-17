@@ -9,3 +9,9 @@ Clients can select their departure and arrival destinations either manually or b
 Once the ticket is finalized, it is saved in the "customer_ticket.csv" file. The UserInterface window is then closed, and the DisplayTicket class is invoked to display the printed ticket details.
 
 Payment for the ticket will be processed through the POS terminal.
+
+### Filling out ticket: ###
+![Filling out ticket](/UI%20Pictures/FillTicket.png)
+
+### Showing ticket: ###
+![Showing ticket](/UI%20Pictures/ShowTicket.png)
